@@ -1,0 +1,28 @@
+.card__container {
+    padding: 3em var(--main-padding);
+}
+
+.card__container:nth-of-type(even) {
+    font-size: .9em;
+}
+
+.card__container:nth-of-type(even) > h1{
+    font-size: 1.5em;
+}
+
+.card__container:nth-of-type(odd) {
+    --background-color: var(--color-lightBrand);
+    background-color: var(--background-color);
+}
+
+.card__container h1{
+    font-size: 1.3em;
+}
+
+.card__container p{
+    margin: 1em 0;
+}
+
+.card__container button{
+    font-weight: 600;
+}

@@ -1,4 +1,5 @@
-
+@import url("./asset/css/hero&banner.css");
+@import url("./asset/css/card.css");
 
 :root{
     --color-darkblue: #0d1b3e;
@@ -6,7 +7,48 @@
     --color-grey: #3b3b3b;
     --color-lightGrey: #909090;
     --color-light: #f9f9f9;
-    --color-lightBrand: #fff1dd;
-    --color-lighterBrand: #ec8f66;
-    --color-darkBrand: #fe7338;
+    --color-lightBrand: #fff7ef;
+    --color-lighterBrand: #eea78a;
+    --color-darkBrand: #fd7856;
+
+    --font: 'Open Sans', sans-serif;
+
+    --main-padding: max(1rem, 5vw);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --text-color: var(--color-darkblue);
+
+    font-family: var(--font);
+    color: var(--text-color);
+
+    font-size: max(15px, 2.5vh);
+}
+main > *{padding: var(--main-padding);}
+
+a, button, input, select, i{color: inherit;}
+a {text-decoration: none;}
+li {list-style-type: none;}
+p {font-size: 1em;}
+img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+button {
+    border: none;
+    background-color: var(--background-color);
+    
+    color: var(--text-color);
+}
+
+/* temporary */
+header, footer {
+    display: none;
 }

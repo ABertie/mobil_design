@@ -1,0 +1,82 @@
+.hero{
+    --background-color: var(--color-lightBrand);
+
+    background-color: var(--background-color);
+
+    font-size: 1.1em;
+}
+
+.hero h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero__buttonContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em .4em;
+    
+    margin: 2.5em 0;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+
+    position: relative;
+
+    padding: 5em var(--main-padding);
+    background-image: linear-gradient(var(--color-lighterBrand), var(--color-darkBrand));
+
+    text-align: center;
+}
+.banner > * {
+    position: relative;
+    z-index: 1;
+}
+
+.banner > img {
+    position: absolute;
+    inset: 0 auto auto 0;
+    z-index: 0;
+
+    width: 60%;
+}
+.banner > img:last-of-type {
+    inset: auto 0 0 auto;
+}
+
+.banner .icon{
+    --background-color: var(--color-light);
+    background-color: var(--color-light);
+    border-radius: 1em;
+    aspect-ratio: 1/1;
+}
+
+.banner .icon img {
+    width: 6em;
+}
+
+.banner h1 {
+    font-size: 1.1em;
+}
+
+.banner__buttonContainer{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.hero button, .banner button{
+    --background-color: var(--color-darkblue);
+    --text-color: var(--color-light);
+
+    display: flex;
+    justify-content: space-between;
+
+    min-width: 130px;
+    padding: .7em 1.1em;
+    border-radius: 2em;
+}
